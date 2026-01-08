@@ -1,0 +1,11 @@
+name: "Blank issue"
+description: "Use this template for anything not covered by the other templates."
+title: ""
+labels: []
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Describe the issue, idea, or question"
+      description: "Provide as much context as possible (what you're seeing, expected behavior, steps, links, screenshots)."
+      required: true

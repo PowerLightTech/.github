@@ -1,0 +1,51 @@
+name: "Bug Report"
+description: "Report a bug with reproduction steps, environment, and logs to help triage and fix it."
+title: "[BUG] "
+labels: [bug, needs-triage]
+body:
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to reproduce"
+      description: "Provide a concise, numbered list of steps to reproduce the bug."
+      placeholder: "1. Go to...\n2. Click...\n3. Observe..."
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected behavior"
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "Actual behavior"
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment (OS, browser, version, app version)"
+      description: "Include OS, browser and versions, or other relevant environment details."
+      placeholder: "Windows 10, Chrome 110, PowerLight v1.2.3"
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs / stack trace"
+      description: "Paste any relevant logs, error messages or stack traces."
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      options: ["Low", "Medium", "High", "Critical"]
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional context"
+      description: "Anything else that may help reproduce or diagnose the issue."
