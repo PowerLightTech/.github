@@ -25,7 +25,4 @@ Notes
   own templates.
 - Adjust `ISSUE_TEMPLATE/config.yml` to set the preferred template
   order and contact links.
-- For more details, check with TJ or refer to [GitHub's documentation
-  on issue templates](https://docs.github.com/en/communities/using-
-  templates-to-encourage-useful-issues-and-pull-requests/configuring-
-  issue-templates-for-your-repository#creating-issue-templates).
+- For more details, check with TJ or refer to [GitHub's documentation on issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-templates).
