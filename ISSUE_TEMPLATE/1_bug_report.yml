@@ -1,6 +1,5 @@
 name: "Bug Report"
 description: "Report a bug with reproduction steps, environment, and logs to help triage and fix it."
-title: "[BUG] "
 labels: [bug, needs-triage]
 body:
   - type: textarea
@@ -8,41 +7,36 @@ body:
     attributes:
       label: "Steps to reproduce"
       description: "Provide a concise, numbered list of steps to reproduce the bug."
-      placeholder: "1. Go to...\n2. Click...\n3. Observe..."
-      required: true
+      placeholder: "1. ...\n2. ...\n3. ..."
 
   - type: textarea
     id: expected-behavior
     attributes:
       label: "Expected behavior"
-      required: true
 
   - type: textarea
     id: actual-behavior
     attributes:
       label: "Actual behavior"
-      required: true
 
   - type: input
     id: environment
     attributes:
-      label: "Environment (OS, browser, version, app version)"
-      description: "Include OS, browser and versions, or other relevant environment details."
-      placeholder: "Windows 10, Chrome 110, PowerLight v1.2.3"
-      required: true
+      label: "Environment (HW version, FW version, SW version)"
+      description: "Include any other relevant environment details."
+      placeholder: "TX FrontEnd v0.1, TX Backend v0.2, FW v0.27, HW Rev. 2026-01-15"
 
   - type: textarea
     id: logs
     attributes:
-      label: "Logs / stack trace"
-      description: "Paste any relevant logs, error messages or stack traces."
+      label: "Supporting files (logs, etc.)"
+      description: "Paste any relevant logs, error messages, screenshots, videos, or stack traces."
 
   - type: dropdown
     id: severity
     attributes:
       label: "Severity"
       options: ["Low", "Medium", "High", "Critical"]
-      required: true
 
   - type: textarea
     id: additional-context

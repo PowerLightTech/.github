@@ -1,6 +1,5 @@
-name: "Enhancement Request (Feature)"
+name: "Feature (Enhancement Request)"
 description: "Request a new feature using an Agile user-story format and acceptance criteria."
-title: "[ENHANCEMENT] "
 labels: [enhancement, needs-triage]
 body:
   - type: input
@@ -9,7 +8,6 @@ body:
       label: "As a... (role)"
       description: "Who benefits from this feature?"
       placeholder: "e.g., As a product manager"
-      required: true
 
   - type: input
     id: goal
@@ -17,7 +15,6 @@ body:
       label: "I want... (goal)"
       description: "What is the capability you want?"
       placeholder: "e.g., I want to be able to schedule recurring tasks"
-      required: true
 
   - type: input
     id: benefit
@@ -25,12 +22,11 @@ body:
       label: "So that... (benefit)"
       description: "Why is this valuable?"
       placeholder: "e.g., So that I can automate weekly workflows"
-      required: true
 
   - type: textarea
     id: acceptance-criteria
     attributes:
-      label: "Acceptance criteria"
+      label: "Acceptance criteria (Definition of Done)"
       description: "Define clear, testable conditions that must be met for this to be considered done."
       placeholder: "- Given...\n- When...\n- Then..."
 
