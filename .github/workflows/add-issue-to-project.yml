@@ -1,0 +1,21 @@
+name: Add Issue to Project
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: read
+      contents: read
+    steps:
+      - name: Add issue to project
+        uses: actions/add-to-project@v0.5.0
+        with:
+          # Use repository variable PROJECT_URL if set, otherwise use default org project
+          # To set per repository: Settings > Secrets and variables > Actions > Variables > New repository variable
+          # Name: PROJECT_URL, Value: https://github.com/orgs/PowerLightTech/projects/YOUR_PROJECT_NUMBER
+          project-url: ${{ vars.PROJECT_URL || 'https://github.com/orgs/PowerLightTech/projects/1' }}
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
