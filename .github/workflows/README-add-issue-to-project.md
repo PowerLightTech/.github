@@ -18,6 +18,8 @@ The issue templates in this repository (`.github/ISSUE_TEMPLATE/`) are automatic
 
 ## Setup Instructions
 
+> **Note**: An initial organization-level token has been created and deployed for this workflow. This token will need to be periodically renewed and redeployed to maintain workflow functionality.
+
 ### 1. Create a Personal Access Token (PAT)
 
 The workflow requires a PAT with permissions to add issues to projects.
