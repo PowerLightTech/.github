@@ -7,21 +7,21 @@ body:
     attributes:
       label: "As a... (role)"
       description: "Who benefits from this feature?"
-      placeholder: "e.g., As a product manager"
+      placeholder: "e.g., product manager"
 
   - type: input
     id: goal
     attributes:
       label: "I want... (goal)"
       description: "What is the capability you want?"
-      placeholder: "e.g., I want to be able to schedule recurring tasks"
+      placeholder: "e.g., to be able to schedule recurring tasks"
 
   - type: input
     id: benefit
     attributes:
       label: "So that... (benefit)"
       description: "Why is this valuable?"
-      placeholder: "e.g., So that I can automate weekly workflows"
+      placeholder: "e.g., I can automate weekly workflows"
 
   - type: textarea
     id: acceptance-criteria
